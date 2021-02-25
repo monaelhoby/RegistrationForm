@@ -1,0 +1,326 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Registration Form</title>
+</head>
+<body>
+  <div class="container">
+	<div class="formContainer">
+		<div class="row">
+		  <div class="col-md-4 col-2 text-right">
+			<!-- progressbar -->
+			<ul id="progressbar">
+				<div class="line"></div>
+				<li class="text-right">
+					<h5>Enter Your Details</h5>
+					<p>Please enter your details below so we know where to send your fresh coffee</p>
+					<span></span>
+					<div class="imgContainer"><img src="./images/check.png" /></div>
+				</li>
+				<li class="text-right">
+					<h5>Choose Your Size</h5>
+					<p>How much coffee would you like?</p>
+					<span></span>
+					<div class="imgContainer"><img src="./images/check.png" /></div>
+				</li>
+				<li class="text-right">
+					<h5>Choose Grind</h5>
+					<p>We have a selection of three different grinds</p>
+					<span></span>
+					<div class="imgContainer"><img src="./images/check.png" /></div>
+				</li>
+				<li class="text-right">
+					<h5>Choose Frequency</h5>
+					<p>Choose how ofter would you like to recieve your box</p>
+					<span></span>
+					<div class="imgContainer"><img src="./images/check.png" /></div>
+				</li>
+				<li class="text-right">
+					<h5>Submit Payment</h5>
+					<p>Please proceed to payment</p>
+					<div class="imgContainer"><img src="./images/check.png" /></div>
+				</li>
+			</ul>
+		  </div>
+		  <div class="col-sm-8 col-10">
+		   <div id="msform">
+			<!-- fieldsets -->
+			<fieldset>
+				<h2 class="fs-title text-left">Simple Registration</h2>
+				<p class="fs-subtitle text-left">Get a new coffee delivered every month or every two-weeks from over 20 of the UAE’s coffee roasters. We imclude the highest quality coffee, from singe origin to speacility blends</p>
+				<h5>Enter Your Details</h5>
+				<p class="mobile">
+					Please enter your details below so we know where to send your fresh coffee
+				</p>
+				<!-- <form action="index.html" method="post"> -->
+				<div class="row">
+					<div class="col-md-6 ">
+						<input type="text" id="full-name" name="Full_Name" placeholder="Full Name" />
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="email" name="email" placeholder="Email" />
+					</div>
+					<div class="col-md-6">
+						<select id="state" class="dropdown-city dropdown" name="user_state">
+							<option value="" disabled="disabled" selected="selected">Select City</option>Abu Dhabi</option>
+								<option value="AJ">Ajman</option>
+								<option value="GE">Georgia</option>
+								<option value="AI">Al Ain</option>
+								<option value="DU">Dubai</option>
+								<option value="FU">Fujairah</option>	
+						</select>
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="Adress_Line_1" name="Adress_1" placeholder="Adress Line 1" />
+					</div>
+					<div class="col-md-6">
+						<div class="phoneNumber">
+							<div class="dropdown">
+								<a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="images//Dubi.png"/>
+								</a>
+								<!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								  <a class="dropdown-item" href="#"><img src="images//Dubi.png"/></a>
+								  <a class="dropdown-item" href="#"><img src="images//Dubi.png"/></a>
+								</div> -->
+							  </div>
+							<input type="text" id="Phone_Number" name="Phone_Number" placeholder="Phone Number" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="Adress_Line_2" name="Adress_2" placeholder="Adress Line 2" />
+					</div>
+				</div>
+				<input type="submit" id="submitUser" class="next action-button next-first text-center" value="Next Step" />
+			  <!-- </form> -->
+			</fieldset>
+			<fieldset>
+				<h2 class="fs-title">Choose your Size</h2>
+				<p class="fs-subtitle text-left">Get a new coffee delivered every month or every two-weeks from over 20 of the UAE’s 
+					coffee roasters. We imclude the highest quality coffee, from singe origin to speacility blends</p>
+				<h5 class="text-left">How much coffee would you like ?</h5>
+				<div class="mobile">How much coffee would you like?</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 text-center">
+						<div class="bag-coffe active text-center">
+							<img src="./images/icon/Size (1) 1.png" width="50px" height="50px"/>
+							<h4>250 G</h4>
+							<p>( 10 - 12 Cups )</p>	
+							<div class="text-center">
+								<small>Price</small>
+								<h6>AED <span>120</span></h6>
+							</div>
+						</div>
+						<small class="text-left notePrice">* You chose 250 G</small>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="bag-coffe text-center">
+							<img src="./images/icon/Size (1) 1.png" width="50px" height="50px"/>
+							<h4>500 G</h4>
+							<p>( 20 - 24 Cups )</p>	
+							<div class="text-center">
+								<small>Price</small>
+								<h6>AED <span>220</span></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<input type="button" name="next" class="next action-button next-first text-center" value="Next Step" />
+				<a type="button" name="previous" class="previous action-prev text-left" value="Previous"><i class="bi bi-arrow-left-short"></i> Go Back</a>
+			</fieldset>
+			<fieldset>
+				<h2 class="fs-title text-left">Choose Grind</h2>
+				<p class="fs-subtitle text-left">Get a new coffee delivered every month or every two-weeks from over 20 of the UAE’s 
+					coffee roasters. We imclude the highest quality coffee, from singe origin to speacility blends</p>
+				<h5 class="text-left">We have a selection of three different grinds</h5>
+				<div class="mobile">We have selection of three different grinds</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="bag-coffe active text-center">
+							<img src="./images/icon/Wholebean 1.png" width="50px" height="50px"/>
+							<h4>Wholebean</h4>
+							<h6 class="contentUnderimg">Grind it how you like</h6>
+						</div>
+						<small class="notePrice">* You chose Wholebean Coffee</small>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="bag-coffe text-center">
+							<img src="./images/icon/Pourover 1.png" width="50px" height="50px"/>
+							<h4>Pour Over</h4>
+							<h6 class="contentUnderimg">Best for trip coffee</h6>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="bag-coffe text-center">
+							<img src="./images/icon/Espresso 1.png" width="50px" height="50px"/>
+							<h4>Espresso</h4>
+							<h6 class="contentUnderimg">For the at home baristas using coffee machines</h6>
+						</div>
+					</div>
+				</div>	
+				<input type="button" name="next" class="next action-button next-first text-center" value="Next Step" />
+				<a type="button" name="previous" class="previous action-prev text-left" value="Previous"><i class="bi bi-arrow-left-short"></i> Go Back</a>
+			</fieldset>
+			<fieldset>
+				<h2 class="fs-title text-left">Choose Frequency</h2>
+				<p class="fs-subtitle text-left">Get a new coffee delivered every month or every two-weeks from over 20 of the UAE’s 
+					coffee roasters. We imclude the highest quality coffee, from singe origin to speacility blends</p>
+				<h5 class="text-left">Choose how often you would like to receive your box</h5>
+				<div class="mobile">Choose how ofter would you like to recieve your box</div>
+				<div class="row">
+					<div class="col-md-4  col-sm-6">
+						<div class="bag-coffe active text-center">
+							<img src="./images/icon/Frequency 1.png" width="50px" height="50px"/>
+							<h4>Every Two Weeks</h4>
+						</div>
+						<small class="notePrice">* You choose Every Two Weeks</small>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="bag-coffe text-center">
+							<img src="./images/icon/Frequency 1.png" width="50px" height="50px"/>
+							<h4>Every Month</h4>
+						</div>
+					</div>
+				</div>
+				<input type="button" name="next" class="next action-button addPrices next-first text-center" value="Next Step" />
+				<a type="button" name="previous" class="previous action-prev text-left" value="Previous"><i class="bi bi-arrow-left-short"></i> Go Back</a>
+			</fieldset>
+			<fieldset>
+				<img src="./images/icon/Thank you icon 1.png" />
+				<h4 class="thankyou">Thank You</h4>
+				<h6 class="thnkyoucontent">Thank you for joining with us. You’re almost there, please proceed 
+					to payment & fresh coffee will be on its way</h6>
+					<table class="table">
+						<thead style="display: none">
+						  <tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row" class="quantity">Quantity - 250 G</th>
+							<td class="quantity_price">$200.00</td>
+						  </tr>
+						  <tr>
+							<th scope="row" class="time">Two in Two Weeks</th>
+							<td  class="time_price"></td>
+						  </tr>
+						  <tr>
+							<th scope="row" class="type">Grind - Wholebean</th>
+							<td class="type_price"></td>
+						  </tr>
+						  <!-- <tr>
+							<th scope="row">Voucher Discount</th>
+							<td>-$0</td>
+						  </tr> -->
+						  <tr>
+							<th scope="row">Total to pay</th>
+							<td class="total_price">$230.00</td>
+						  </tr>
+						</tbody>
+					</table>
+					<input type="submit" name="submit" id="submit" class="submit action-button submit" value="Proceed to Payment" />
+					<a type="button" name="previous" class="previous action-prev text-left" value="Previous"><i class="bi bi-arrow-left-short"></i> Go Back</a>
+			</fieldset>
+			</div>
+		  </div>
+		</div>
+	</div>
+  </div>
+  <!-- Bootstrap plugin -->
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- jQuery --> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- jQuery easing plugin --> 
+    <script src="js/jquery.easing.min.js" type="text/javascript"></script> 
+    <script src="js/script.js"  type="text/javascript"></script>
+	<!-- Firebase -->
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+
+  <script>
+var db = firebase.initializeApp({
+        apiKey: "AIzaSyAUzEa4pz4VJp2j_ANZqCG9r2UEdSIFzVA",
+        authDomain: "taskproject-87dc3.firebaseapp.com",
+        databaseURL: "https://taskproject-87dc3.firebaseio.com",
+        projectId: "taskproject-87dc3",
+        storageBucket: "taskproject-87dc3.appspot.com",
+        messagingSenderId: "558369244015",
+        appId: "1:558369244015:web:27d781d4fdde401b149e9a",
+        measurementId: "G-HK0E5LV4S5"
+      }).firestore();
+
+
+	  let docId = 12345 ;
+
+	// form functions
+	var form = document.getElementsByTagName("form")[0];
+	document.getElementById("submitUser").onclick=function(e) {
+	e.preventDefault();
+	let userDetail = {
+	fullName: document.getElementById("full-name").value,
+	userEmail: document.getElementById("email").value,
+	userCity: document.getElementById("state").value,
+	userAdress1: document.getElementById("Adress_Line_1").value,
+	userPhoneNumber: document.getElementById("Phone_Number").value,
+	userAdress2: document.getElementById("Adress_Line_2").value,
+	};
+	return db.collection("userDetails").add(userDetail)
+		.then((ref) => {
+			userDetail.id = ref.id;
+			docId = ref.id;
+			return userDetail ;
+	})
+}
+
+  //addorders ;
+
+  document.getElementById("submit").onclick = function (){
+	
+	let orderDetail = {
+		quantity: document.getElementsByClassName("quantity")[0].innerHTML,
+		type: document.getElementsByClassName("type")[0].innerHTML,
+		time: document.getElementsByClassName("time")[0].innerHTML,
+	};
+	
+	
+		if(orderDetail.quantity.trim() == "Quantity 500 G" && orderDetail.time.trim() == "Every Month"){
+			window.location.href="./pages/link1.html";
+		} 
+		if(orderDetail.quantity.trim() == "Quantity 500 G" && orderDetail.time.trim() == "Every Two Weeks"){
+			window.location.href="./pages/link2.html";
+		}
+		if(orderDetail.quantity.trim() == "Quantity 250 G" && orderDetail.time.trim() == "Every Month"){
+			window.location.href="./pages/link3.html";
+		}
+		if(orderDetail.quantity.trim() == "Quantity 250 G" && orderDetail.time.trim() == "Every Two Weeks"){
+			window.location.href="./pages/link4.html";
+		}
+	return db.collection("orderDetails").add(orderDetail)
+		.then((ref) => {
+			orderDetail.id = ref.id;
+			docId = ref.id;
+			return orderDetail ;
+	})
+  }
+
+
+  
+  </script>
+</body>
+</html>
