@@ -265,31 +265,43 @@ var db = firebase.initializeApp({
         measurementId: "G-HK0E5LV4S5"
       }).firestore();
 
+	  var docID = 12345;
 
-	  let docId = 12345 ;
+	  var userDetail = {
+		fullName: "",
+		userEmail: "",
+		userCity: "",
+		userAdress1: "",
+		userPhoneNumber: "",
+		userAdress2: "",
+		};
 
 	// form functions
 	var form = document.getElementsByTagName("form")[0];
 	document.getElementById("submitUser").onclick=function(e) {
 	e.preventDefault();
-	let userDetail = {
-	fullName: document.getElementById("full-name").value,
-	userEmail: document.getElementById("email").value,
-	userCity: document.getElementById("state").value,
-	userAdress1: document.getElementById("Adress_Line_1").value,
-	userPhoneNumber: document.getElementById("Phone_Number").value,
-	userAdress2: document.getElementById("Adress_Line_2").value,
-	};
+		userDetail = {
+		fullName: document.getElementById("full-name").value,
+		userEmail: document.getElementById("email").value,
+		userCity: document.getElementById("state").value,
+		userAdress1: document.getElementById("Adress_Line_1").value,
+		userPhoneNumber: document.getElementById("Phone_Number").value,
+		userAdress2: document.getElementById("Adress_Line_2").value,
+		};
 	return db.collection("userDetails").add(userDetail)
 		.then((ref) => {
 			userDetail.id = ref.id;
-			docId = ref.id;
+			docID = ref.id;
 			return userDetail ;
 	})
 }
 
-  //addorders ;
+var link1 = "./pages/link1.html";
+var link2 = "./pages/link2.html";
+var link3 = "./pages/link3.html";
+var link4 = "./pages/link4.html";
 
+  //addorders ;
   document.getElementById("submit").onclick = function (){
 	
 	let orderDetail = {
@@ -297,27 +309,26 @@ var db = firebase.initializeApp({
 		type: document.getElementsByClassName("type")[0].innerHTML,
 		time: document.getElementsByClassName("time")[0].innerHTML,
 	};
-	
-	
 		if(orderDetail.quantity.trim() == "Quantity 500 G" && orderDetail.time.trim() == "Every Month"){
-			window.location.href="./pages/link1.html";
+			window.location.href=link1;
 		} 
 		if(orderDetail.quantity.trim() == "Quantity 500 G" && orderDetail.time.trim() == "Every Two Weeks"){
-			window.location.href="./pages/link2.html";
+			window.location.href=link2;
 		}
 		if(orderDetail.quantity.trim() == "Quantity 250 G" && orderDetail.time.trim() == "Every Month"){
-			window.location.href="./pages/link3.html";
+			window.location.href=link3;
 		}
 		if(orderDetail.quantity.trim() == "Quantity 250 G" && orderDetail.time.trim() == "Every Two Weeks"){
-			window.location.href="./pages/link4.html";
+			window.location.href=link4;
 		}
-	return db.collection("orderDetails").add(orderDetail)
-		.then((ref) => {
-			orderDetail.id = ref.id;
-			docId = ref.id;
-			return orderDetail ;
-	})
-  }
+	
+		var userOrder = {user : userDetail, orders : orderDetail}
+		return db.collection("orderDetails").add(userOrder)
+			.then((ref) => {
+				allData.id = ref.id;
+				return userOrder ;
+		})
+		}
 
 
   
