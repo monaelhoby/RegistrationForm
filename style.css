@@ -383,7 +383,7 @@ fieldset h5{
     background: #379ea5;
     z-index: 999;
     top: calc(50% + 20px);
-    right: 19px;
+    right: 20px;
     border-radius: 50%;
 }
 #progressbar .line{

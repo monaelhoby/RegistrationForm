@@ -50,6 +50,8 @@ if (mediaQuery.matches) {
   $("fieldset .submit").attr("value", "Payment");
 }
 
+$('fieldset .row div:first-of-type .bag-coffe').addClass('active');
+
 $('fieldset .bag-coffe').click(function(){
 	const price =$(this).find("> h4").html();
 	$(this).parent().parent("div").find("div > .active").removeClass("active");
